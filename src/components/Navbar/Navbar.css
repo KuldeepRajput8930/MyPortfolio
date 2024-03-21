@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------Navbar------------------------- */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--trBackgroundColor);
+    font-family: Poppins, sans-serif;
+    padding: 1% 4%;
+    backdrop-filter: blur(7px);
+}
+
+.logo {
+    height: 55px;
+}
+
+.links-container {
+    display: flex;
+    gap: 37px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--fontPrimaryColor);
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-bottom: 90px;
+    animation-name: example;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.link:hover {
+    color: var(--primaryColor);
+}
+
+.active {
+    font-weight: 600;
+    color: var(--primaryColor);
+    opacity: 1;
+}
+
+
+.link2 {
+    animation-delay: 0.2s;
+}
+
+.link3 {
+    animation-delay: 0.4s;
+}
+
+.link4 {
+    animation-delay: 0.6s;
+}
+
+.link5 {
+    animation-delay: 0.8s;
+}
+
+@keyframes example {
+    from {
+        margin-bottom: 90px;
+    }
+
+    to {
+        margin-bottom: 0px;
+    }
+}
+
+/* ----------------------Menu-Button------------------------- */
+
+.menu-button {
+    display: none;
+    position: fixed;
+    right: 5%;
+    z-index: 2;
+    margin-top: 23px;
+}
+
+.menu-button img {
+    height: 24px;
+}
+
+.menu-button img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
+/* ----------------------Sidebar------------------------- */
+
+.sidebar {
+    display: none;
+    position: fixed;
+    right: -100%;
+    width: 90%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-family: Poppins, sans-serif;
+    backdrop-filter: blur(7px);
+    background: var(--backgroundGradient2);
+    border-left: 1px solid var(--fontPrimaryColor);
+    transition: all 0.4s ease 0s;
+    padding: 10%;
+}
+
+.sidebar-links link {
+    font-size: 40px;
+}
+
+.sidebarVisible {
+    right: 0;
+}
+
+.sidebar-links {
+    list-style: none;
+    font-size: 16px;
+}
+
+.mode img {
+    height: 25px;
+}
+
+/* ---------------------media queries---------------------- */
+
+
+@media screen and (max-width:1023px) {
+    .menu-button {
+        display: block;
+    }
+
+    .sidebar {
+        display: flex;
+    }
+
+    .links-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {}

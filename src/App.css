@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primaryColor: #4fc0d6;
+    --primaryColorDark: #2ca0b8;
+    --primaryColorLight: #73bbc9b6;
+    --secondaryColor: #f1d4e5;
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #dadada;
+    --trBackgroundColor: #ffffffb2;
+    --fontPrimaryColor: #383838;
+    --fontPrimaryColorOpp: #e7e7e7;
+    --fontSecondaryColor: #7a7a7a;
+    --scrollbarColor: #cacaca;
+    --bgColor2: #d6d5d5;
+    --shadowColor: #979797;
+    --shadowColor1: #d8d8d8;
+    --shadowColor2: #ececec;
+    --backgroundGradient: radial-gradient(circle at 10% 45%, #88bbf1 2%, #fff 25%);
+    --backgroundGradient2: radial-gradient(circle at 90% 45%, #97c6f8 2%, #fff 25%);
+    --backgroundGradient3: radial-gradient(circle at 12% 60%, #a1c7f0 2%, #fff 13%);
+    --backgroundGradient4: radial-gradient(circle at 90% 58%, #a4caf0 2%, #fff 13%);
+    --gradientBackground: -webkit-linear-gradient(109.6deg, rgba(150, 50, 189, .753) 11.2%, #e9877a 100.2%);
+    --gradientBackground2: -webkit-linear-gradient(109.6deg, rgba(150, 50, 189, .753) 31.2%, #3987ec 100.2%);
+    --gradientBackgroundDarker: -webkit-linear-gradient(109.6deg, rgba(106, 17, 141, .753) 11.2%, #bd4d3f 100.2%);
+}
