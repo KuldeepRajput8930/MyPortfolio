@@ -1,7 +1,7 @@
 import './Navbar.css'
 import moonImg from '/images/bxs-moon.svg'
 import sunImg from '/images/bxs-sun.svg'
-import logoImg from '/images/logo.jpeg'
+import logoImg from '/images/logo.png'
 import menuIconImg from '/images/menu-icon.svg'
 import closeBtn from '/images/closeBtn.svg'
 import { useEffect, useState } from 'react'

@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.serviceFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10em 2%;
+    background: var(--primaryBackgroundColor);
+}
+
+.items {
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.items img {
+    width: 100px;
+}
+
+/*--------------------top------------------------- */
+
+.top {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    gap: 3em;
+}
+
+/*------------------ Item1-------------------- */
+
+.item1 {
+    flex-direction: column;
+    width: 62%;
+    max-width: 400px;
+}
+
+.item1 button {
+    font-size: 17px;
+    background: var(--fontPrimaryColor);
+    color: var(--primaryBackgroundColor);
+    padding: 10px 12px;
+    border: medium;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.item1 button:hover {
+    box-shadow: 0 0 10px 3px var(--shadowColor);
+}
+
+.item1 h2 {
+    font-size: 2.7em;
+    line-height: 1.1em;
+    color: var(--fontPrimaryColor);
+    font-family: "Comfortaa", cursive;
+    font-weight: 400;
+}
+
+.item1 h2 span {
+    display: block;
+    color: var(--primaryColor);
+}
+
+.item1 p {
+    font-family: Poppins, sans-serif;
+    color: var(--fontSecondaryColor);
+    font-size: 15px;
+}
+
+.item2 {
+    align-self: flex-end;
+    margin-right: 4em;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 12px 12px 19px var(--shadowColor1), -12px -12px 19px var(--shadowColor2);
+}
+
+/*------------------ Item2-------------------- */
+
+.item2 {
+    align-self: flex-end;
+    margin-right: 4em;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 12px 12px 19px var(--shadowColor1), -12px -12px 19px var(--shadowColor2);
+    color: var(--fontPrimaryColor);
+}
+
+.item2 h2 {
+    font-weight: 800;
+    font-family: "Comfortaa", cursive;
+}
+
+.item2 p {
+    font-family: Poppins, sans-serif;
+}
+
+/*--------------------bottom------------------------- */
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 3em;
+    margin-top: 3em;
+}
+
+/*------------------ Item3-------------------- */
+
+.item3 {
+    align-self: flex-end;
+    margin-right: 4em;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 12px 12px 19px var(--shadowColor1), -12px -12px 19px var(--shadowColor2);
+    color: var(--fontPrimaryColor);
+}
+
+.item3 h2 {
+    font-weight: 800;
+    font-family: "Comfortaa", cursive;
+}
+
+.item3 p {
+    font-family: Poppins, sans-serif;
+}
+
+/*------------------ Item4-------------------- */
+
+.item4 {
+    align-self: flex-end;
+    margin-right: 4em;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 12px 12px 19px var(--shadowColor1), -12px -12px 19px var(--shadowColor2);
+    color: var(--fontPrimaryColor);
+}
+
+
+.item4 h2 {
+    font-weight: 800;
+    font-family: "Comfortaa", cursive;
+}
+
+.item4 p {
+    font-family: Poppins, sans-serif;
+}
+
+
+
+/*----------------------media queries--------------------------*/
+
+@media screen and (max-width:1023px) {
+    .top{
+        width: fit-content;
+    }
+    .item2{
+        margin-right: 0;
+    }
+    .item3 {
+        margin-right: 0;
+    }
+
+    .item4 {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:830px) {
+    .items{
+        flex-direction: column;
+    }
+   .top{
+    flex-direction: row;
+    width: 90%;
+   }
+   .bottom{
+    align-self: center;
+    flex-direction: row;
+    width: 90%;
+   }
+   .item1{
+    width: 62%;
+   }
+}
+
+@media screen and (max-width:588px) {
+    .top{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+    .item1{
+        width: 98%;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .item2{
+        width: 98%;
+        align-self: center;
+    }
+    .item3{
+        width: 98%;
+        align-self: center;
+    }
+    .item4{
+        width: 98%;
+        align-self: center;
+    }
+}
