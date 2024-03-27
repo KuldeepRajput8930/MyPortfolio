@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skillFrame {
+    padding: 7em 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    background: var(--backgroundGradient3);
+}
+
+.skillFrame img {
+    width: 40%;
+    max-width: 600px;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container h2 {
+    font-family: "Comfortaa", cursive;
+    color: var(--fontPrimaryColor);
+    margin-bottom: 1em;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.skill h3 {
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+    color: var(--fontPrimaryColor);
+}
+
+.skill .skill-name {
+    width: 150px;
+}
+
+.skill .rightSign {
+    width: 25px;
+    color: #28b828;
+}
+
+.range {
+    border-radius: 4px;
+    width: 240px;
+    height: 10px;
+    background-color: gray;
+}
+
+.fill {
+    border-radius: 4px;
+    background-color: #28b828;
+    height: 10px;
+}
+
+.fill1 {
+    width: 97%;
+}
+
+.fill2 {
+    width: 99%;
+}
+
+.fill3 {
+    width: 85%;
+}
+
+.fill4 {
+    width: 94%;
+}
+
+.fill5 {
+    width: 95%;
+}
+
+.fill6 {
+    width: 83%;
+}
+
+.fill7 {
+    width: 92%;
+}
+
+.fill8 {
+    width: 80%;
+}
+
+.cv-btn {
+    display: inline-block;
+    width: fit-content;
+    font-size: 17px;
+    padding: 14px 12px;
+    border-top: medium;
+    border-right: medium;
+    border-left: medium;
+    border-image: none;
+    background: none;
+    border-bottom: 2px solid var(--fontPrimaryColor);
+    margin-top: 17px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cv-btn:hover {
+    background: var(--secondaryBackgroundColor);
+}
+
+.cv-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    color: var(--fontPrimaryColor);
+}
+
+
+
+/*----------------------media queries--------------------------*/
+
+@media screen and (max-width:1023px) {
+
+    .skillFrame {
+        flex-wrap: wrap;
+    }
+
+    .skillFrame img {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:830px) {}
+
+@media screen and (max-width:588px) {
+
+    .range {
+        width: 150px;
+    }
+
+    .skill .skill-name {
+        width: 120px;
+    }
+
+    .skillFrame img {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .skill-container {
+        gap: 1em;
+        align-items: center;
+    }
+
+    .skill {
+        gap: 0;
+    }
+
+    .range {
+        width: 100%;
+    }
+
+    .skillFrame {
+        justify-content: center;
+    }
+
+    .skill {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .skill .skill-name {
+        width: fit-content;
+    }
+}
