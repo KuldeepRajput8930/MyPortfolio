@@ -20,6 +20,7 @@
     font-family: Poppins, sans-serif;
     padding: 1% 4%;
     backdrop-filter: blur(7px);
+    z-index: 3;
 }
 
 .logo {

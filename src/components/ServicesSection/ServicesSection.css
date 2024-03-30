@@ -13,7 +13,7 @@
     background: var(--primaryBackgroundColor);
 }
 
-.items {
+.serviceFrame .items {
     display: flex;
     -moz-box-pack: center;
     justify-content: center;
@@ -214,7 +214,7 @@
     }
 }
 @media screen and (max-width:830px) {
-    .items{
+    .serviceFrame .items{
         flex-direction: column;
     }
    .top{
