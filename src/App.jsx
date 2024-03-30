@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import InfoSection from './components/InfoSection/InfoSection'
 import ServicesSection from './components/ServicesSection/ServicesSection'
 import SkillsSection from './components/SkillsSection/SkillsSection'
+import ProjectSection from './components/ProjectSection/ProjectSection'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
       <Home />
       <InfoSection />
       <ServicesSection />
-      <SkillsSection/>
+      <SkillsSection />
+      <ProjectSection />
     </>
   )
 }

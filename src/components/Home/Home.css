@@ -39,7 +39,7 @@
     color: var(--fontSecondaryColor);
 }
 
-.title {
+.intro .title {
     font-size: 2em;
     text-transform: capitalize;
     font-weight: 700;
