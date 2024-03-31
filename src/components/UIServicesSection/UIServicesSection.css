@@ -1,0 +1,67 @@
+.container {
+    padding: 7em 4%;
+    background: var(--primaryBackgroundColor);
+}
+
+.container .title {
+    text-align: center;
+}
+
+.container .title h1 {
+    font-family: "Comfortaa", cursive;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#e755ca, #ab4ceb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .title p {
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    color: var(--fontSecondaryColor);
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em 1em;
+    margin-top: 3em;
+}
+
+.items .item {
+    width: 370px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.items .item img {
+    width: 70px;
+}
+
+.items .item h3 {
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    color: var(--fontPrimaryColor);
+}
+
+.items .item p {
+    color: var(--fontSecondaryColor);
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+}
+
+.items .item:hover {
+    box-shadow: 0 0 12px 2px var(--shadowColor1);
+}
