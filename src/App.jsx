@@ -7,6 +7,7 @@ import SkillsSection from './components/SkillsSection/SkillsSection'
 import ProjectSection from './components/ProjectSection/ProjectSection'
 import ItemsSection from './components/ItemsSection/ItemsSection'
 import UIServicesSection from './components/UIServicesSection/UIServicesSection'
+import FAQSection from './components/FAQSection/FAQSection'
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       <SkillsSection />
       <ProjectSection />
       <ItemsSection />
-      <UIServicesSection/>
+      <UIServicesSection />
+      <FAQSection />
     </>
   )
 }

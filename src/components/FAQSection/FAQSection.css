@@ -1,0 +1,239 @@
+.faq-container {
+    padding: 7em 4%;
+    background: var(--backgroundGradient4);
+}
+
+.faq-container .title {
+    text-align: center;
+}
+
+.faq-container .title h1 {
+    font-family: "Comfortaa", cursive;
+    font-weight: 600;
+    background: var(--gradientBackground);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.faq-container .title p {
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    color: var(--fontSecondaryColor);
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+}
+
+.faq-container .title p .link-styles {
+    color: var(--fontPrimaryColor);
+    text-decoration: none;
+}
+
+.faq-container .question {
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0;
+    align-items: center;
+}
+
+.faq-container .question hr {
+    width: 80%;
+    border: none;
+    border-top: 1px solid var(--fontSecondaryColor);
+}
+
+.question .row {
+    transition: 0.4s;
+    height: 30px;
+    width: 80%;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+}
+
+.question .row span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question .row span h2 {
+    color: var(--primaryColor);
+    font-weight: 500;
+}
+
+.question .row span .icon {
+    font-size: 2em;
+    color: var(--primaryColor);
+}
+
+.question .row p {
+    display: none;
+}
+
+/* -------------------active------------------------- */
+
+.question .active {
+    transition: 0.4s;
+    height: 80px;
+    width: 80%;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+}
+
+.question .active p {
+    display: flex;
+    transition: 0.4s;
+    color: var(--fontSecondaryColor);
+    font-weight: 300;
+}
+
+.question .active span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question .active h2 {
+    color: var(--primaryColor);
+    font-weight: 500;
+}
+
+.question .active span .icon {
+    transform: rotate(180deg);
+    font-size: 2em;
+    color: var(--primaryColor);
+}
+
+/*----------------------- media queries--------------------------- */
+
+@media screen and (max-width: 1170px) {
+    .faq-container .question hr {
+        width: 97%;
+    }
+
+    .question .row {
+        width: 98%;
+    }
+
+    .question .active {
+        width: 98%;
+    }
+
+}
+
+@media screen and (max-width: 955px) {
+    .question .active {
+        height: 90px;
+    }
+
+    .question .active p {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .question .row h2 {
+        font-size: 1.4em;
+    }
+
+    .question .active {
+        width: 98%;
+        height: 90px;
+    }
+
+    .question .active h2 {
+        font-size: 1.4em;
+    }
+
+    .question .active p {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .question .active {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .question .row {
+        height: 40px;
+
+    }
+
+    .question .row h2 {
+        line-height: 24px;
+    }
+
+    .question .active {
+        height: 100px;
+
+    }
+
+    .question .active h2 {
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .question .active {
+        height: 110px;
+    }
+
+    .question .active p {
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .question .active {
+        height: 130px;
+
+    }
+
+    .question .active p {
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .question .row h2 {
+        font-size: 1.2em;
+    }
+
+    .question .active {
+        height: 140px;
+
+    }
+
+    .question .active h2 {
+        font-size: 1.2em;
+    }
+
+    .question .active p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .question .row h2 {
+        font-size: 1.2em;
+    }
+
+    .question .active {
+        height: 160px;
+
+    }
+
+    .question .active h2 {
+        font-size: 1.2em;
+    }
+
+    .question .active p {
+        font-size: 15px;
+    }
+}
